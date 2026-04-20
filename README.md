@@ -14,7 +14,7 @@ A comprehensive, modern async Python API for PocketOption trading platform with 
 ## Key Features
 
 ### Enhanced Connection Management
-- **Complete SSID Format Support**: Works with full authentication strings from browser (format: `42["auth",{"session":"...","isDemo":1,"uid":...,"platform":1}]`)
+- **Complete SSID Format Support**: Works with full authentication strings from browser (format: `42["auth",{"42["auth",{"sessionToken":"f1cf12c3558a1a67a9e2187fad0f1ec1","uid":"129267301","lang":"en","currentUrl":"cabinet/trading-profile","isChart":0}] i}]`)
 - **Persistent Connections**: Automatic keep-alive with 20-second ping intervals (like the original API)
 - **Auto-Reconnection**: Intelligent reconnection with multiple region fallback
 - **Connection Pooling**: Optimized connection management for better performance
@@ -91,7 +91,7 @@ WARNING | pocketoptionapi_async.client:_start_regular_connection:245 - Failed to
 
 ✅ **Correct format:**
 ```python
-SSID = '42["auth",{"session":"n1p5ah5u8t9438rbunpgrq0hlq","isDemo":1,"uid":84402008,"platform":1}]'
+SSID = 42["auth",{"sessionToken":"f1cf12c3558a1a67a9e2187fad0f1ec1","uid":"129267301","lang":"en","currentUrl":"cabinet/trading-profile","isChart":0}]
 ```
 
 ❌ **Wrong format (just the session):**
