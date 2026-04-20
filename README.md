@@ -91,7 +91,7 @@ WARNING | pocketoptionapi_async.client:_start_regular_connection:245 - Failed to
 
 ✅ **Correct format:**
 ```python
-SSID = '42["auth",{"session":"n1p5ah5u8t9438rbunpgrq0hlq","isDemo":1,"uid":84402008,"platform":1}]'
+SSID = '42["auth",{"sessionToken":"f1cf12c3558a1a67a9e2187fad0f1ec1","uid":"129267301","live":"en","currentUrl":"cabinet","isChart":1}]}]'
 ```
 
 ❌ **Wrong format (just the session):**
